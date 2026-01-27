@@ -259,6 +259,11 @@ def ice():
     print("Aureliano pauses and turns to you. 'We saw ice', he says.")
 
 def credits():
+    print("--------------------------------------------------------------------------")
+    print("--------------------------The Life of Ursula -----------------------------")
+    print("----------------------------- Chapter 1 ----------------------------------")
+    print("--------------------------Number of Plays: 1 -----------------------------")
+    print("--------------------------------------------------------------------------")
     print("You have lived the first chapter of the life of Ursula. See the reflection for the stuff, but a good chunk of your\nchoices had very little to no effect on the story.")
     print("The only thing that changed was how much aura you have.")
     print("Ursula:")
