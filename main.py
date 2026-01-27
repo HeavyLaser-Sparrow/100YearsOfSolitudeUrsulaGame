@@ -174,15 +174,15 @@ def macondoFounding():
 def gypsies1():
     print("Everything is fine for a few years, when one day, the gypsies come to town. One of the gypsies is\nnamed Melquiades.")
     print("Melquiades wants to sell JAB some metal stones in exchange for the two donkeys that provide your livelyhood.")
-    giveDonkey = input("Do you give JAB the donkies? [y/n]")
+    giveDonkey = input("Do you give JAB the donkeys? [y/n]")
     if giveDonkey == "y":
-        print("JAB ignores you and just takes the donkies.")
+        print("JAB ignores you and just takes the donkeys.")
     elif giveDonkey == "n":
-        print("JAB ignores you and just takes the donkies.")
+        print("JAB ignores you and just takes the donkeys.")
     else:
         exit("Please make sure you do everything exactly. This is your only warning. You will be ignored in the future.")
-    print("JAB exchanges the donkies for some metal stones from Melquiades. He says that he will make back triple the money that \nwas lost.")
-    print("donkies -2")
+    print("JAB exchanges the donkeys for some metal stones from Melquiades. He says that he will make back triple the money that \nwas lost.")
+    print("donkeys -2")
     print("After the gypsies leave, JAB leaves to try his 'plan', but it doesn't work. Instead, he just finds some old armor.")
     print()
 
@@ -250,6 +250,7 @@ def JABJourney():
     print("You tell him that instead of chasing his fantasies, he should take care of his children.")
     ursula["aura"] += 100
     print("Something seems to finally click in his head. From then on, he starts acting like a real parent, taking care of the kids.")
+    print("You gain 100 aura")
     print()
 
 def ice():
@@ -262,7 +263,7 @@ def credits():
     print("--------------------------------------------------------------------------")
     print("--------------------------The Life of Ursula -----------------------------")
     print("----------------------------- Chapter 1 ----------------------------------")
-    print("--------------------------Number of Plays: 1 -----------------------------")
+    print("--------------------------Number of Plays: 0 -----------------------------")
     print("--------------------------------------------------------------------------")
     print("You have lived the first chapter of the life of Ursula. See the reflection for the stuff, but a good chunk of your\nchoices had very little to no effect on the story.")
     print("The only thing that changed was how much aura you have.")
@@ -271,25 +272,20 @@ def credits():
     pass
 
 while playing:
-    showStats()
+    titleScreen()
     introduction()
     print("Please fill out the instructions EXACTLY as shown (including capitals, no spaces for y/n questions.)")
     showStats()
     jungleJourney()
-    showStats()
     macondoFounding()
-    showStats()
     gypsies1()
-    showStats()
     gypsies2()
-    showStats()
+    showStats
     gypsies3()
-    showStats()
     gypsiesReflection()
-    showStats()
     JABStopJourney()
-    showStats()
     JABJourney()
     showStats()
     ice()
+    credits()
     break
