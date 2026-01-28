@@ -21,9 +21,9 @@ def titleScreen():
     print("--------------------------------------------------------------------------")
 
 def showStats():
-    print(f"Ursula Aura: {ursula["aura"]}")
-    print(f"Ursula Health: {ursula["health"]}")
-    print(f"Ursula Energy: {ursula["energy"]}")
+    print(f"Ursula Aura: {ursula['aura']}")
+    print(f"Ursula Health: {ursula['health']}")
+    print(f"Ursula Energy: {ursula['energy']}")
 
 def ticTacToe():
     print("Starting Tic-Tac-Toe")
@@ -131,7 +131,7 @@ def hangman():
             print("no")
             lives -= 1
         if("" not in guessedLetters):
-            print("You have deciphered the word: forgiveness")
+            print("You have deciphered the word: forgive")
             print("Prudencio Aguilar slowly fades away.")
             ursula["aura"] += 1000
             break
@@ -141,9 +141,9 @@ def hangman():
         play = input("You lost this round, play again?[y/n]: ")
         if (play.lower() == "y"):
             print("You ask him if you can play again.")
-            hangman()
         else:
             print("The next day, he takes out the board again.")
+        hangman()
 
 def introduction():
     print("Welcome Ursula. Welcome to your life.")
@@ -267,7 +267,7 @@ def credits():
     print("You have lived the first chapter of the life of Ursula. See the reflection for the stuff, but a good chunk of your\nchoices had very little to no effect on the story.")
     print("The only thing that changed was how much aura you have.")
     print("Ursula:")
-    print(f"\tAura: {ursula["aura"]}")
+    print(f"\tAura: {ursula['aura']}")
     pass
 
 while playing:
